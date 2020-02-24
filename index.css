@@ -1,5 +1,6 @@
 body{
 	height: 100%;
+	background-color: aqua;
 }
 
 .message{
@@ -8,7 +9,7 @@ body{
 
 #footer{
 	position: fixed;
-	bottom: 15%;
+	top: 15%;
 	width: 100%;
 	text-align: center;
 }

@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 atomize.root.messages = atomize.lift([]);
             }
             vm.$set(vm.mine, "messages", atomize.root.messages);
-            atomize.root.messages.push("poop");
         	return atomize.root.messages.length;	//Vue.js injects "__proto__" and changes arrays immediately (not deferred by AtomizeJS like normal writes)
         },
         length => {
