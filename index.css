@@ -1,0 +1,14 @@
+body{
+	height: 100%;
+}
+
+.message{
+	display: block;
+}
+
+#footer{
+	position: fixed;
+	bottom: 15%;
+	width: 100%;
+	text-align: center;
+}

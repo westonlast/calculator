@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AtomizeJS Example</title>
+		<link href="index.css" rel="stylesheet">
+		<script src="https://vuejs.org/js/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1.4.0/dist/sockjs.min.js"></script>
+		<script src="lib/cereal.js"></script>
+		<script src="lib/compat.js"></script>
+		<script src="lib/atomize.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="vue">
+			<input v-for="message in mine.messages"
+				   class="message"
+				   readonly
+				   :value="message"
+			/>
+			<div id="footer">
+				<input v-model="expression"
+					   placeholder="Enter an expression to evaluate"
+					   @keydown.enter="onEnter"
+					   size="25"
+				/>
+			</div>
+		</div>
+	</body>
+</html>
